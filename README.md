@@ -56,12 +56,3 @@ npm run dev
 
 ```
 
-## 🌐 Deployment on Vercel
-
-1.Push your project to GitHub.
-
-2.Visit vercel.com and import your repository.
-
-3.Set environment variables if required.
-
-4.Click Deploy and your app will be live in seconds.
