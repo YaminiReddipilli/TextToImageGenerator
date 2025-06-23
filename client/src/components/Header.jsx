@@ -18,7 +18,7 @@ export const Header = () => {
   }
 
   return (
-    <motion.div className='flex flex-col justify-center items-center text-center my-20'
+    <motion.div className='flex flex-col justify-center items-center text-center my-5'
     initial={{opacity:0.2, y:100}} 
     transition={{duration:1}}
     whileInView={{opacity: 1, y: 0}} 
