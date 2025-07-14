@@ -11,6 +11,7 @@ const Home = () => {
         <Steps/>
         <Description/>
         <GenerateBtn/>
+      
     </div>
   )
 }
