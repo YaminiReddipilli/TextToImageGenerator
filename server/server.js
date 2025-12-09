@@ -17,17 +17,17 @@ await connectDB()
 app.use('/api/user', userRouter)
 app.use('/api/image', imageRouter)
 
-// API health route
+// API health route (NOT root '/')
 app.get('/api', (req, res) => res.send("API Working Fine.."))
 
-// ---------------- Serve Frontend ----------------
+// ---- Frontend Serving ----
 const __dirname = path.resolve();
 
 app.use(express.static(path.join(__dirname, "../client/dist")));
 
-app.get("/*", (req, res) => {
+app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname, "../client/dist/index.html"));
 });
-// -------------------------------------------------
+// --------------------------
 
 app.listen(PORT, () => console.log('Server running on port ' + PORT))
